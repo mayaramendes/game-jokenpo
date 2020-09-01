@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo TV06</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Jokenpo</h1>
+        <!-- <img class="imagem-logo" src="images/logo.png"> -->
+    </header>
+    <div class="scoreboard">
+        <p id="scores">
+            <span id="userScore">0</span>:<span id="compScore">0</span>
+        </p>
+        <p id="userLabel" class="scoreLabel">você</p>
+        <p id="compLabel" class="scoreLabel">comp</p>
+    </div>
+
+    <div class="result">
+        <p id="result"> Faça sua jogada </p>
+    </div>
+
+    <div class="buttons">
+        <img src="./images/paper.png" id="paperButton" alt="Papel" class="bn" onclick="game(this.value)" value="paper">
+        <img src="./images/rock.png" id="rockButton" alt="Pedra" class="bn" onclick="game(this.value)" value="rock">
+        <img src="./images/scissors.png" id="scissorsButton" alt="Tesoura" class="bn" onclick="game(this.value)" value="scissors">
+    </div>
+    
+    <footer>
+        <p>Boa sorte!</p>
+      
+    </footer>
+    
+
+    <div class="buttonWrap">
+        <button id="resetButton" class="resetButton" type="submit">Resetar</button>
+    </div>
+    
+   
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>
